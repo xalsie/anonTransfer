@@ -6,7 +6,7 @@ import { FileToUpload } from "./interfaces/IAnonTransferRepository.js";
  * API principale pour AnonTransfer
  * Permet d'uploader des fichiers vers anontransfer.com
  */
-export class AnonTransfer {
+export class AnonTransferAPI {
 	private repository: AnonTransferRepository;
 
 	constructor() {

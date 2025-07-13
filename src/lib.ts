@@ -1,5 +1,5 @@
 // Main exports for the AnonTransfer API library
-export { AnonTransfer } from "./index.js";
+export { AnonTransferAPI } from "./index.js";
 export type {
 	FileToUpload,
 	UploadProgress,

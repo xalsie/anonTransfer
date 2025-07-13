@@ -1,10 +1,10 @@
-import { AnonTransfer, type FileToUpload } from "../index.js";
+import { AnonTransferAPI, type FileToUpload } from "../index.js";
 
 async function progressExample() {
 	console.log("AnonTransfer Upload with Progress Example");
 	console.log("==========================================\n");
 
-	const api = new AnonTransfer();
+	const api = new AnonTransferAPI();
 
 	try {
 		const files: FileToUpload[] = [
