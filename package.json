@@ -24,7 +24,7 @@
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsc --watch",
-		"test:1": "npm run build && node dist/tests/main.test.js",
+		"test": "npm run build && node dist/tests/main.test.js",
 		"test:2": "npm run build && node dist/tests/progress.test.js",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
