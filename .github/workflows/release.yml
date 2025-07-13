@@ -73,7 +73,7 @@ jobs:
 
             - name: Create dist archive
               run: |
-                  tar -czf gofile-${{ steps.version.outputs.version }}-dist.tar.gz dist/
+                  tar -czf anontransfer-${{ steps.version.outputs.version }}-dist.tar.gz dist/
 
             - name: Verify package contents before publishing
               run: |
@@ -91,7 +91,7 @@ jobs:
                   node -e "
                     const fs = require('fs');
                     const pkg = require('./package.json');
-                    pkg.name = '@${{ github.repository_owner }}/gofile';
+                    pkg.name = '@${{ github.repository_owner }}/anontransfer';
                     pkg.publishConfig = {
                       registry: 'https://npm.pkg.github.com'
                     };
@@ -129,11 +129,11 @@ jobs:
                       ## Installation
 
                       ```bash
-                      npm install @${{ github.repository_owner }}/gofile@${{ steps.version.outputs.version }}
+                      npm install @${{ github.repository_owner }}/anontransfer@${{ steps.version.outputs.version }}
                       ```
                   draft: false
                   prerelease: false
-                  files: gofile-${{ steps.version.outputs.version }}-dist.tar.gz
+                  files: anontransfer-${{ steps.version.outputs.version }}-dist.tar.gz
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
