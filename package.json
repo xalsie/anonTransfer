@@ -1,0 +1,60 @@
+{
+	"name": "anontransfer",
+	"version": "1.0.0",
+	"description": "A NodeJS wrapper for the AnonTransfer API - Clean Architecture Implementation",
+	"homepage": "https://github.com/xalsie/anonTransfer#readme",
+	"bugs": {
+		"url": "https://github.com/xalsie/anonTransfer/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xalsie/anonTransfer.git"
+	},
+	"license": "ISC",
+	"author": "LeGrizzly",
+	"type": "module",
+	"main": "dist/lib.js",
+	"types": "dist/lib.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/lib.js",
+			"types": "./dist/lib.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"test:1": "npm run build && node dist/tests/main.test.js",
+		"test:2": "npm run build && node dist/tests/progress.test.js",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"lint:format": "prettier --write .",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"anontransfer",
+		"file-upload",
+		"nodejs",
+		"typescript",
+		"clean-architecture",
+		"api-wrapper"
+	],
+	"devDependencies": {
+		"@eslint/js": "^9.31.0",
+		"@eslint/markdown": "^7.0.0",
+		"@types/node": "^24.0.13",
+		"@typescript-eslint/eslint-plugin": "^8.36.0",
+		"@typescript-eslint/parser": "^8.36.0",
+		"eslint": "^9.31.0",
+		"eslint-config-prettier": "^10.1.5",
+		"eslint-plugin-prettier": "^5.5.1",
+		"globals": "^16.3.0",
+		"prettier": "^3.6.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.36.0"
+	},
+	"engines": {
+		"node": ">=24.0.0"
+	}
+}

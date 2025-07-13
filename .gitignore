@@ -1,0 +1,13 @@
+# nodes
+node_modules/
+package-lock.json
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# build output
+dist/
+build/
+out/
