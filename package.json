@@ -1,6 +1,6 @@
 {
 	"name": "anontransfer",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A NodeJS wrapper for the AnonTransfer API - Clean Architecture Implementation",
 	"homepage": "https://github.com/xalsie/anonTransfer#readme",
 	"bugs": {
