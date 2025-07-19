@@ -14,13 +14,11 @@
 	"author": "LeGrizzly",
 	"type": "module",
 	"main": "dist/lib.js",
-	"types": "dist/lib.d.ts",
-	"exports": {
-		".": {
-			"import": "./dist/lib.js",
-			"types": "./dist/lib.d.ts"
-		}
-	},
+	"files": [
+		"dist/**/*",
+		"README.md",
+		"package.json"
+	],
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsc --watch",
